@@ -1,4 +1,3 @@
-cat > index.js << 'ENDOFFILE'
 const express = require("express");
 const {
   default: makeWASocket,
@@ -225,4 +224,3 @@ app.listen(PORT, "0.0.0.0", () => {
     for (const dir of dirs) { console.log("Restoring: " + dir); createSession(dir).catch((e) => console.error("Restore fail:", e.message)); }
   }
 });
-ENDOFFILE
